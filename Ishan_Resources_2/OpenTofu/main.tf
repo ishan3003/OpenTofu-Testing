@@ -10,8 +10,8 @@ terraform {
 
 provider "spotinst" {
   # Configuration options
-  token = "<Test>"
-  account = "act-c23ac1f8"
+  token = "Token"
+  account = "Account"
 }
 
 resource "spotinst_elastigroup_azure_v3" "test_azure_group" {
