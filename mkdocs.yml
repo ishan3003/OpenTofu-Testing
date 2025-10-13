@@ -1,0 +1,18 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: test
+name: test
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: prod
+  sourceCode:
+    provider: Github
+    repoName: OpenTofu-Testing
+    connectorRef: account.IshanTestGit
+    branch: main
+    monoRepo: false
+    url: https://github.com/ishan3003/OpenTofu-Testing/tree/main
+metadata:
+  tags:
+  - rest
