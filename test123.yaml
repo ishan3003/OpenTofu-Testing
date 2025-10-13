@@ -1,0 +1,18 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: manualtest
+name: manual-test
+owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
+spec:
+  lifecycle: deprecated
+  sourceCode:
+    provider: Github
+    repoName: idp-template
+    connectorRef: account.IshanTest
+    branch: main
+    monoRepo: false
+    url: https://github.com/ishan3003/idp-template/tree/main
+metadata:
+  tags:
+  - manual-test
