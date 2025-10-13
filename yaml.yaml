@@ -1,0 +1,21 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: test
+name: test
+owner: user:account/imran.khan@harness.io
+orgIdentifier: default
+projectIdentifier: test1111
+spec:
+  lifecycle: production
+  sourceCode:
+    provider: Harness
+    repoName: org.asd
+    connectorRef: ''
+    branch: main
+    monoRepo: false
+    url: https://app.harness.io/ng/#/account/vpCkHKsDSxK9_KYfjCTMKA/module/code/orgs/default/repos/asd/files/main
+metadata:
+  description: Test- Descriptipm
+  tags:
+  - rest
