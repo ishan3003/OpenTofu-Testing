@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testentitygit
+name: test-entity-git
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: production
+metadata:
+  description: test
+  tags:
+  - rest
