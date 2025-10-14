@@ -1,9 +1,17 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: test-ishan-api
-  description: The official Access control REST APIs
+  name: "ishan-test"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: Aashrit-Harness/hello-world-app
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '642d4b9741ee3c555d4e1a7f'
+    jira/project-key: IDP
+    pagerduty.com/service-id: PT5ED69
+    circleci.com/project-slug: github/vigneswara-propelo/python-pipeline-samples
+    jenkins.io/github-folder: 'CDS-68313'
 spec:
-  type: openapi
-  lifecycle: production
-  owner: ishan
+  type: service
+  owner: "Ishan"
+  lifecycle: experimental
