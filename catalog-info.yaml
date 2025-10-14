@@ -1,1 +1,11 @@
-
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: accesscontrol-service
+  description: The official Access control REST APIs
+spec:
+  type: openapi
+  lifecycle: production
+  owner: plplayacc
+  definition:
+    $text: https://app.harness.io/prod1/authz/api/openapi.json 
