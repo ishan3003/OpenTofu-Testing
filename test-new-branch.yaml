@@ -1,0 +1,13 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testgitsyncissue
+name: test-gitsync-issue
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: production
+  system:
+  - system:account/test
+metadata:
+  tags:
+  - rest
