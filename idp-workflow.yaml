@@ -3,6 +3,7 @@
 spec:
   owner: debabrata.panigrahi@harness.io
   type: service
+  apiVersion: 1.2.1
   parameters:
     - title: Service Details
       properties:
