@@ -11,6 +11,7 @@ metadata:
     pagerduty.com/service-id: PT5ED69
     circleci.com/project-slug: github/vigneswara-propelo/python-pipeline-samples
     jenkins.io/github-folder: 'CDS-68313'
+    backstage.io/techdocs-ref: ishan-test
 spec:
   type: service
   owner: "Ishan"
