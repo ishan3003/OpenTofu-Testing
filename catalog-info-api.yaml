@@ -7,5 +7,3 @@ spec:
   type: openapi
   lifecycle: production
   owner: ishan
-  definition:
-    $text: https://app.harness.io/prod1/authz/api/openapi.json 
