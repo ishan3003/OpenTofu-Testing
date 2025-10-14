@@ -8,7 +8,7 @@ metadata:
     backstage.io/view-url: https://github.com/samriddhi-daga/hello-world/tree/main/template4.yaml
     backstage.io/edit-url: https://github.com/samriddhi-daga/hello-world/edit/main/template4.yaml
     backstage.io/source-location: url:https://github.com/samriddhi-daga/hello-world/tree/main/
-  name: workflow-template-ui
+  name: ishan-test-workflow
   title: Workflow Template UI
   description: An template for the scaffolder that triggers a simple pipeline
   tags:
