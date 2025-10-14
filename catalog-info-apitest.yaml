@@ -1,11 +1,12 @@
-apiVersion: harness.io/v1
+apiVersion: backstage.io/v1alpha1
 kind: API
-name: hello-world
-identifier: account_helloworld_setup
-type: grpc
-owner: team-c
+metadata:
+  name: accesscontrol-service
+  description: The official Access control REST APIs
 spec:
-  lifecycle: deprecated
+  type: openapi
+  lifecycle: production
+  owner: plplayacc
   definition: |-
     // Copyright 2015 gRPC authors.
     //
@@ -45,5 +46,3 @@ spec:
     message HelloReply {
       string message = 1;
     }
-metadata:
-  description: Hello World example for gRPC
