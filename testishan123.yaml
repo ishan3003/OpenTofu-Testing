@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: ishantestcomponent
+name: ishan-test-component
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: production
+metadata:
+  description: test
+  tags:
+  - rest
