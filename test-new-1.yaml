@@ -1,0 +1,11 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testingidpfallbackissue
+name: testing-idp-fallback-issue
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: production
+metadata:
+  tags:
+  - rest
