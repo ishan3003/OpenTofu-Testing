@@ -2,10 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: "ishan-test"
-  annotations:
-    backstage.io/techdocs-ref: url:https://github.com/backstage/backstage/tree/master/plugins/techdocs-backend/examples/documented-component
-    backstage.io/kubernetes-label-selector: 'app=idp-ui'
-    backstage.io/kubernetes-namespace: '642d4b9741ee3c555d4e1a7f'
 spec:
   type: service
   owner: "IDPAdmin"
