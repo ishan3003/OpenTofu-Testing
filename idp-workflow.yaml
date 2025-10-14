@@ -1,22 +1,49 @@
-...
-# these are the steps which are rendered in the frontend with the form input
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/samriddhi-daga/hello-world/tree/main/template4.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/samriddhi-daga/hello-world/blob/main/template4.yaml
+    backstage.io/view-url: https://github.com/samriddhi-daga/hello-world/tree/main/template4.yaml
+    backstage.io/edit-url: https://github.com/samriddhi-daga/hello-world/edit/main/template4.yaml
+    backstage.io/source-location: url:https://github.com/samriddhi-daga/hello-world/tree/main/
+  name: workflow-template-ui
+  title: Workflow Template UI
+  description: An template for the scaffolder that triggers a simple pipeline
+  tags:
+    - pipeline
+    - harness
+  uid: 870c4f18-095e-4c52-b92d-ed3f2532238f
+  etag: bc52d1f7005a4f8a8102af69e16747141b6da69f
+relations:
+  - type: ownedBy
+    targetRef: user:default/samriddhi.daga
+    target:
+      kind: user
+      namespace: default
+      name: samriddhi.daga
 spec:
-  owner: debabrata.panigrahi@harness.io
+  owner: user:default/samriddhi.daga
+  lifecycle: production
   type: service
-  apiVersion: 1.2.1
   parameters:
-    - title: Service Details
-      properties:
-        owner:
-          title: Choose an Owner for the Service
-          type: string
-          ui:field: OwnerPicker
-          ui:options:
-            allowedKinds:
-              - Group
-        # This field is hidden but needed to authenticate the request to trigger the pipeline
-        token:
-          title: Harness Token
-          type: string
-          ui:widget: password
-          ui:field: HarnessAuthToken
+    properties:
+      token:
+        title: Harness Token
+        type: string
+        ui:widget: password
+        ui:field: HarnessAuthToken
+  steps:
+    - id: trigger
+      name: Simple Pipeline with wait step
+      action: trigger:harness-custom-pipeline
+      input:
+        url: https://qa.harness.io/ng/account/Vp0XSI5MSgiF9p8lIIpThg/module/cd/orgs/default/projects/automation/pipelines/TemplateAutomation/pipeline-studio?storeType=INLINE
+        inputset:
+          project_name: test
+        apikey: ${{ parameters.token }}
+  output:
+    links:
+      - title: Pipeline Details
+        url: ${{ steps.trigger.output.PipelineUrl }}
