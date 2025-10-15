@@ -7,6 +7,6 @@ owner: ishan.gude@harness.ip
 spec:
   lifecycle: deprecated
 metadata:
-  description: Default Branch test
+  description: Default Branch test New 1
   tags:
   - bn
