@@ -10,6 +10,6 @@ spec:
   lifecycle: deprecated
   definition: ishan
 metadata:
-  description: test
+  description: test-ishan-123
   tags:
   - java
