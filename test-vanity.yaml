@@ -1,0 +1,15 @@
+apiVersion: harness.io/v1
+kind: API
+type: grpc
+identifier: test
+name: test
+owner: ishan
+orgIdentifier: testautoidp
+projectIdentifier: testautoidp
+spec:
+  lifecycle: deprecated
+  definition: ishan
+metadata:
+  description: test-ishan-123
+  tags:
+  - java
