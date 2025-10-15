@@ -1,0 +1,19 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testgitsyncissue
+name: test-gitsync-issue
+owner: user:account/ishan.gude@harness.io
+spec:
+  lifecycle: deprecated
+  sourceCode:
+    provider: Github
+    repoName: OpenTofu-Testing
+    connectorRef: account.IshanTest
+    branch: main
+    monoRepo: false
+    url: https://github.com/ishan3003/OpenTofu-Testing/tree/main
+metadata:
+  description: Ishan
+  tags:
+  - bn
