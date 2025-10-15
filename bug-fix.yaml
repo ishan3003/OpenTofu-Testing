@@ -14,6 +14,6 @@ spec:
     monoRepo: false
     url: https://github.com/ishan3003/OpenTofu-Testing/tree/main
 metadata:
-  description: Ishan
+  description: Ishan-IDP
   tags:
   - bn
