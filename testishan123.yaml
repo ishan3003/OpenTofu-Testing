@@ -7,6 +7,6 @@ owner: user:account/ishan.gude@harness.io
 spec:
   lifecycle: production
 metadata:
-  description: test
+  description: test1234
   tags:
   - rest

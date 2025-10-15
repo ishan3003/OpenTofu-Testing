@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: test-ishan-api
+  name: ishan-test
   description: The official Access control REST APIs
 spec:
   type: openapi
   lifecycle: production
   owner: ishan
   definition:
-    $text: https://app.harness.io/prod1/authz/api/openapi.json
+    $text: https://app.harness.io/prod1/authz/api/openapi.json 
