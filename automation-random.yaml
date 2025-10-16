@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: idpentitycreategitfeaturebranch
+name: idp-entity-create-git-feature-branch
+owner: user:account/idp-automation@harnessioprivate.testinator.com
+spec:
+  lifecycle: deprecated
+metadata:
+  description: Test for CRUD of an entity in non default branch
+  tags:
+  - java
