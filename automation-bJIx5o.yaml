@@ -2,11 +2,11 @@ apiVersion: harness.io/v1
 kind: Component
 type: idp-ui-automation-type
 identifier: idpgitfeaturebranch864511
-name: idp-git-feature-branch-864511
+name: idp-edited-feature-branch-379148
 owner: user:account/idp-automation@harnessioprivate.testinator.com
 spec:
   lifecycle: deprecated
 metadata:
-  description: Test for CRUD of an entity in non default branch
+  description: Edited the Entity
   tags:
   - java
