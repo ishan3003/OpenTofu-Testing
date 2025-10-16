@@ -2,7 +2,7 @@ apiVersion: harness.io/v1
 kind: Component
 type: idp-ui-automation-type
 identifier: testeditissuemainbranch
-name: test-edit-issue-main-branch
+name: test-edited-ishan
 owner: ishan
 spec:
   lifecycle: deprecated
