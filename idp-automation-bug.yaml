@@ -2,7 +2,7 @@ apiVersion: harness.io/v1
 kind: Component
 type: idp-ui-automation-type
 identifier: enitynondefaultcreated
-name: enity-non-default-created
+name: enity-non-default-updated
 owner: ishan
 spec:
   lifecycle: deprecated
