@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: ishantestnewone
   namespace: default
-  description: new ishan test updated
+  description: new ishan test name
   annotations:
 #     harness.io/project-url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/vigneshproject/details
 #     circleci.com/project-slug: github/Vickiee26/python-pipeline-samples
