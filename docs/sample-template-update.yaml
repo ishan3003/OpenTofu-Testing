@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: techdocs-enabled-template
-  title: Template with TechDocs
+  title: Template with TechDocs 1
   description: A Backstage template that is itself documented with TechDocs
   annotations:
     backstage.io/techdocs-ref: dir:.
