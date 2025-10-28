@@ -1,4 +1,4 @@
-newapiVersion: backstage.io/v1alpha1
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: ishantestnew
