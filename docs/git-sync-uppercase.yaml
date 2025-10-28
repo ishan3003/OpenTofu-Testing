@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: TEST-ishan
   namespace: default
-  description: new refresh updated name
+  description: new ishan test 
   annotations:
 #     harness.io/project-url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/vigneshproject/details
 #     circleci.com/project-slug: github/Vickiee26/python-pipeline-samples
@@ -14,7 +14,7 @@ metadata:
     backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
     jenkins.io/job-full-name: 'CDS-68313'
   tags:
-  - rest  
+  - java  
   hello: newHello
 #     snyk.io/org-name: vigneswara-propelo
 #     snyk.io/project-ids: 7c7766e6-1231-4e4f-b51f-0cbd2aacb227, 4addb946-2ff4-41b7-ae71-2a5d480193ee
