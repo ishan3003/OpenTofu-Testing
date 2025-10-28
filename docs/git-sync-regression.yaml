@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: tetst-new-sync
   namespace: default
-  description: new refresh
+  description: new refresh ishan
   annotations:
 #     harness.io/project-url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/vigneshproject/details
 #     circleci.com/project-slug: github/Vickiee26/python-pipeline-samples
@@ -19,4 +19,4 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-b
+  owner: team-a
