@@ -1,11 +1,44 @@
-apiVersion: backstage.io/v1alpha1
+apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: my-SErvice
-  description: A sample service with TechDocs support
+  name: techdocs-enabled-template
+  title: Template with TechDocs
+  description: A Backstage template that is itself documented with TechDocs
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
-  lifecycle: production
-  owner: team-a
+  owner: user:guest
+  type: template
+
+  parameters:
+    - title: Provide component details
+      required:
+        - name
+      properties:
+        name:
+          type: string
+        owner:
+          type: string
+
+  steps:
+    - id: fetch-base
+      name: Fetch base skeleton
+      action: fetch:template
+      input:
+        url: ./skeleton
+        targetPath: .
+        values:
+          name: ${{ parameters.name }}
+          owner: ${{ parameters.owner }}
+
+    - id: register
+      name: Register the component
+      action: catalog:register
+      input:
+        repoContentsUrl: ${{ steps['fetch-base'].output.repoContentsUrl }}
+        catalogInfoPath: '/catalog-info.yaml'
+
+  output:
+    links:
+      - title: Open in catalog
+        url: ${{ steps.register.output.entityRef | entityRefToUrl }}
