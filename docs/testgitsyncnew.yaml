@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ishantestnew
+  namespace: default
+  description: new ishan test updated
+  annotations:
+#     harness.io/project-url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/vigneshproject/details
+#     circleci.com/project-slug: github/Vickiee26/python-pipeline-samples
+    gitlab.com/project-id: '43877214'
+    jira/project-key: IDP
+    firehydrant.com/service-name: 'python-pipeline-samples'
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
+    jenkins.io/job-full-name: 'CDS-68313'
+  tags:
+  - testissue  
+  hello: newHello
+#     snyk.io/org-name: vigneswara-propelo
+#     snyk.io/project-ids: 7c7766e6-1231-4e4f-b51f-0cbd2aacb227, 4addb946-2ff4-41b7-ae71-2a5d480193ee
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-beer
