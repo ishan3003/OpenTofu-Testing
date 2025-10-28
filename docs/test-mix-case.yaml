@@ -14,11 +14,11 @@ metadata:
     backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
     jenkins.io/job-full-name: 'CDS-68313'
   tags:
-  - java  
+  - testissue  
   hello: newHello
 #     snyk.io/org-name: vigneswara-propelo
 #     snyk.io/project-ids: 7c7766e6-1231-4e4f-b51f-0cbd2aacb227, 4addb946-2ff4-41b7-ae71-2a5d480193ee
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
+  owner: team-beer
