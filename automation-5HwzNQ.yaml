@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: idpgitfeaturebranch994983
+name: idp-edited-feature-branch-440564
+owner: user:account/idp-automation@harnessioprivate.testinator.com
+spec:
+  lifecycle: deprecated
+metadata:
+  description: Edited the Entity
+  tags:
+  - java

@@ -1,0 +1,8 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: gitbrancheditederror
+name: edited-git-branch
+owner: ishan
+spec:
+  lifecycle: deprecated
