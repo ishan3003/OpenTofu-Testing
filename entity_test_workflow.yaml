@@ -1,0 +1,20 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: workflow
+identifier: Test_Entity_Fetch_Workflow
+name: Test Entity Fetch Workflow
+owner: user:account/idp-automation@harnessioprivate.testinator.com
+orgIdentifier: default
+projectIdentifier: ishantestscope
+spec:
+  parameters: []
+  steps:
+  - action: catalog:fetch
+    id: fetchMultiple
+    name: Fetch catalog entities
+    input:
+      entityRefs:
+      - component:default/name
+    showOutputVariables: true
+metadata:
+  description: Entity Fetch Workflow Test
