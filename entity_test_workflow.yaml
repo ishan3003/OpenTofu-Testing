@@ -7,13 +7,14 @@ owner: user:account/idp-automation@harnessioprivate.testinator.com
 orgIdentifier: default
 projectIdentifier: ishantestscope
 spec:
-  text:
-  - title: Output Variable
-    content: |
-      Output Variable **test2** is `${{ steps.fetchMultiple.output}}`
-  - title: Another Output Variable
-    content: "Output Variable **test1** with fqnPath is `${{ steps.fetchMultiple.output\
-      \ }}`    \n"
+  output:
+    text:
+    - title: Output Variable
+      content: |
+        Output Variable **test2** is `${{ steps.fetchMultiple.output}}`
+    - title: Another Output Variable
+      content: "Output Variable **test1** with fqnPath is `${{ steps.fetchMultiple.output\
+        \ }}`    \n"
   parameters:
   - title: Entity Name Input
     properties:
