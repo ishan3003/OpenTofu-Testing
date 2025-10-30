@@ -33,4 +33,5 @@ spec:
       - Harness Pipeline URL
       inputset:
         service_name: ${{ parameters.service_name }}
-      apikey: ${{ parameters.token }}
+        apikey: ${{ parameters.token }}
+        service_branch: ${{ parameters.token }}
