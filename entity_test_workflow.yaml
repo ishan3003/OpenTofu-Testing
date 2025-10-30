@@ -14,7 +14,7 @@ spec:
     name: Fetch catalog entities
     input:
       entityRefs:
-      - component:default/name
+      - component:account.testautoidp/artistlookup_setup
     showOutputVariables: true
 metadata:
   description: Entity Fetch Workflow Test
