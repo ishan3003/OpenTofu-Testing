@@ -1,0 +1,22 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: testimportyaml123
+name: testimportyaml
+owner: timothy
+spec:
+  lifecycle: deprecated
+  sourceCode:
+    provider: Harness
+    repoName: account.accccc-test-final
+    connectorRef: ''
+    branch: abcdef
+    monoRepo: false
+    monoRepoSubDirectoryPath: test123
+    url: https://qa.harness.io/ng/#/account/zEaak-FLS425IEO7OLzMUg/module/code/repos/accccc-test-final/files/abcdef
+  system:
+  - system:account/demo_system
+metadata:
+  description: test
+  tags:
+  - bn
