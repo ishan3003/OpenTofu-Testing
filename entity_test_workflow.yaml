@@ -25,7 +25,7 @@ spec:
   steps:
   - action: catalog:fetch
     id: fetchMultiple
-    name: Fetch catalog entities
+    name: Fetch catalog test
     input:
       entityRef: ${{ parameters.entity_ref }}
     showOutputVariables: false
