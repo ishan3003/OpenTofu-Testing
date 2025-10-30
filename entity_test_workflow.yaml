@@ -21,7 +21,7 @@ spec:
       entity_ref:
         title: Entity Reference
         type: string
-        description: The name of the entity to refer
+        description: The name of the entity to refes
       entity_desc:
         title: Entity Description
         type: string
