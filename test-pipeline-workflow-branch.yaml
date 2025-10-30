@@ -31,9 +31,6 @@ spec:
     input:
       url:
       - https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/module/ci/orgs/default/projects/ishantestscope/pipelines/hello_world_pipeline/pipeline-studio/?storeType=INLINE
-      inputset:
-        service_name: ${{ parameters.service_name }}
-      apikey: ${{ parameters.token }}
 metadata:
   tags:
   - bn
