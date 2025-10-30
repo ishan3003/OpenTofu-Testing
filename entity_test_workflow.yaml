@@ -1,0 +1,33 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: workflow
+identifier: Test_Entity_Fetch_Workflow
+name: Test Entity Fetch Workflow
+owner: user:account/idp-automation@harnessioprivate.testinator.com
+orgIdentifier: default
+projectIdentifier: ishantestscope
+spec:
+  output:
+    text:
+    - title: Output Variable
+      content: |
+        Output Variable **test2** is `${{ steps.fetchMultiple.output}}`
+    - title: Another Output Variable
+      content: "Output Variable **test1** with fqnPath is `${{ steps.fetchMultiple.output\
+        \ }}`    \n"
+  parameters:
+  - title: Entity Name Input
+    properties:
+      entity_ref:
+        title: Entity Reference
+        type: string
+        description: The name of the entity to refer
+  steps:
+  - action: catalog:fetch
+    id: fetchMultiple
+    name: Fetch catalog test
+    input:
+      entityRef: ${{ parameters.entity_ref }}
+    showOutputVariables: false
+metadata:
+  description: Entity Fetch Workflow Test
