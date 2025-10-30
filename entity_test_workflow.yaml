@@ -28,6 +28,6 @@ spec:
     name: Fetch catalog entities
     input:
       entityRef: ${{ parameters.entity_ref }}
-    showOutputVariables: true
+    showOutputVariables: false
 metadata:
   description: Entity Fetch Workflow Test
