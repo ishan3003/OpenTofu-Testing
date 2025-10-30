@@ -12,16 +12,21 @@ spec:
     content: |
       Output Variable **test2** is `${{ steps.fetchMultiple.output}}`
   - title: Another Output Variable
-    content: |
-      Output Variable **test1** with fqnPath is `${{ steps.fetchMultiple.output }}`
-  parameters: []
+    content: "Output Variable **test1** with fqnPath is `${{ steps.fetchMultiple.output\
+      \ }}`    \n"
+  parameters:
+  - title: Entity Name Input
+    properties:
+      entity_ref:
+        title: Entity Reference
+        type: string
+        description: The name of the entity to refer
   steps:
   - action: catalog:fetch
     id: fetchMultiple
     name: Fetch catalog entities
     input:
-      entityRefs:
-      - component:account.testautoidp/artistlookup_setup
+      entityRef: ${{ parameters.entity_ref }}
     showOutputVariables: true
 metadata:
   description: Entity Fetch Workflow Test
