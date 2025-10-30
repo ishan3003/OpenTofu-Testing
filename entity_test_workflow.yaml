@@ -22,11 +22,10 @@ spec:
         title: Entity Reference
         type: string
         description: The name of the entity to refer
-        required: true
       entity_desc:
         title: Entity Description
         type: string
-        description: The name of the entity to refer      
+        description: The name of the entity to refer
   steps:
   - action: catalog:fetch
     id: fetchMultiple
