@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Resource
+type: eks
+identifier: testresourcecreategit
+name: test-resource-create-git
+owner: user:account/justin.field@harness.io
+orgIdentifier: IDP_Traceable_Integration_Explore
+spec:
+  lifecycle: deprecated
+metadata:
+  tags:
+  - bn
