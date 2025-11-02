@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: Access-Control
-  description: The official Access control REST APIs
+  description: The official Access control REST
 spec:
   type: openapi
   lifecycle: production
