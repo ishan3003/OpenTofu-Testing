@@ -19,4 +19,4 @@ spec:
 metadata:
   description: test
   tags:
-  - bn
+  - plugin-test
