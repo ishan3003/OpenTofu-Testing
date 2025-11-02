@@ -5,7 +5,7 @@ metadata:
   description: The official Access control REST
 spec:
   type: openapi
-  lifecycle: production
+  lifecycle: development
   owner: plplayacc
   definition: |-
     // Copyright 2015 gRPC authors.
