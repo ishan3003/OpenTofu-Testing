@@ -8,3 +8,5 @@ spec:
   parent: group:account/testidp1
   members:
   - user:account/ishan.gude@harness.io
+  profile:
+    email: test@xyz.com
