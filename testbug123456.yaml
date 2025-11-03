@@ -16,8 +16,6 @@ spec:
     monoRepo: false
     monoRepoSubDirectoryPath: test123
     url: https://qa.harness.io/ng/#/account/zEaak-FLS425IEO7OLzMUg/module/code/repos/accccc-test-final/files/abcdef
-  system:
-  - system:account/demo_system
 metadata:
   description: test
   tags:
