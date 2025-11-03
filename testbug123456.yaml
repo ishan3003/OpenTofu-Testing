@@ -4,6 +4,8 @@ type: idp-ui-automation-type
 identifier: testishangude1
 name: test
 owner: timothy
+projectIdentifier: testautoidp
+orgIdentifier: testautoidp
 spec:
   lifecycle: deprecated
   sourceCode:
