@@ -1,0 +1,14 @@
+apiVersion: harness.io/v1
+kind: Component
+type: prod0
+identifier: testidpyamlgit
+name: test-idp-yaml-git
+owner: user:account/nataraja@harness.io
+orgIdentifier: default
+projectIdentifier: ssem
+spec:
+  lifecycle: experimental
+metadata:
+  tags:
+  - rest
+  - spotify
