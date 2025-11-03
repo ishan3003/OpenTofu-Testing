@@ -11,6 +11,6 @@ spec:
 metadata:
   description: Test Scorecard
   annotations:
-    backstage.io/source-location: https://github.com/ishan3003/OpenTofu-Testing
+    backstage.io/source-location: url:https://github.com/ishan3003/OpenTofu-Testing/tree/circleci-project-setup
   tags:
   - bn
