@@ -9,6 +9,8 @@ projectIdentifier: ishantestscope
 spec:
   lifecycle: test
 metadata:
+  annotation:
+    backstage.io/source-location: https://github.com/ishan3003/OpenTofu-Testing
   description: Test Scorecard
   tags:
   - bn
