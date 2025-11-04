@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: API
+type: api-test
+identifier: testapicatalogcustomization
+name: test-api-catalog-customization
+owner: user:account/devesh.mishra@harness.io
+spec:
+  lifecycle: experimental
+  definition: docs
+metadata:
+  tags:
+  - asddd
