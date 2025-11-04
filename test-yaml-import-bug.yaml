@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testimportissue
+name: test-ishan-issue
+owner: test
+spec:
+  lifecycle: deprecated
+metadata:
+  description: test
