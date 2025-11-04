@@ -6,6 +6,8 @@ name: test-create-scorecard-check
 owner: user:account/devesh.mishra@harness.io
 spec:
   lifecycle: production
+  system:
+  - system:account/testsystemcatalogcustomization
 metadata:
   description: Scorecard check
   tags:
