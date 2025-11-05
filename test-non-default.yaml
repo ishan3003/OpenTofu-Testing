@@ -1,0 +1,36 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: harness_project
+identifier: testnondefault
+name: test-non-default
+owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
+spec:
+  output:
+    links:
+    - title: Pipeline Details
+      url: ${{ steps.trigger.output.PipelineUrl }}
+  parameters:
+  - title: Service Details
+    required:
+    - service_name
+    properties:
+      token:
+        title: Harness Token
+        type: string
+        ui:widget: password
+        ui:field: HarnessAuthToken
+      service_name:
+        title: Service Name
+        type: string
+        description: Mention the project name
+  steps:
+  - id: trigger
+    name: Creating your appication
+    action: trigger:harness-custom-pipeline
+    input:
+      url:
+      - https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/module/ci/orgs/default/projects/ishantestscope/pipelines/hello_world_pipeline/pipeline-studio/?storeType=INLINE
+metadata:
+  description: dwss
+  tags:
+  - adss
