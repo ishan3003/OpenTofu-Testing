@@ -5,24 +5,7 @@ identifier: testnondefault
 name: test-non-default
 owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
 spec:
-  output:
-    links:
-    - title: Pipeline Details
-      url: ${{ steps.trigger.output.PipelineUrl }}
-  parameters:
-  - title: Service Details
-    required:
-    - service_name
-    properties:
-      token:
-        title: Harness Token
-        type: string
-        ui:widget: password
-        ui:field: HarnessAuthToken
-      service_name:
-        title: Service Name
-        type: string
-        description: Mention the project name
+  parameters: {}
   steps:
   - id: trigger
     name: Creating your appication
