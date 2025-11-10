@@ -11,6 +11,6 @@ spec:
 metadata:
   description: Test Scorecard
   annotations:
-    backstage.io/source-location: url:https://github.com/ishan3003/OpenTofu-Testing/blob/circleci-project-setup
+    backstage.io/source-location: url:https://github.com/harness/idp-settings-ui
   tags:
   - bn
