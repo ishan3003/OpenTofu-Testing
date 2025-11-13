@@ -14,4 +14,4 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: ABAC AU
+  owner: abhi_test_user_group
