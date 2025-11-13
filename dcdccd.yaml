@@ -2,7 +2,7 @@ apiVersion: harness.io/v1
 kind: Component
 type: website
 identifier: testnewentity
-name: test-new-entity-new
+name: test-new-entity-new-one
 owner: test-new-entity
 spec:
   lifecycle: dccd
