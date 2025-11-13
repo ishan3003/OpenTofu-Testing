@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: default
+  annotations:
+    backstage.io/managed-by-location: url:https://github.com/sathish-soundarapandian/onboarding-test/tree/main/CasingTest.yaml
+    backstage.io/managed-by-origin-location: url:https://github.com/sathish-soundarapandian/onboarding-test/blob/main/CasingTest.yaml
+    backstage.io/view-url: https://github.com/sathish-soundarapandian/onboarding-test/tree/main/CasingTest.yaml
+    backstage.io/edit-url: https://github.com/sathish-soundarapandian/onboarding-test/edit/main/CasingTest.yaml
+    backstage.io/source-location: url:https://github.com/sathish-soundarapandian/onboarding-test/tree/main/
+  name: test-ishan-name-new-one-two-three
+  uid: afe17de4-4c2c-4047-8d3f-e2b81840087e
+  etag: d69f76a077a7ec27491d2d68923c28d878897ba0
+spec:
+  type: service
+  lifecycle: production
+  owner: abhi_test_user_group
