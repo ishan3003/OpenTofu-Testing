@@ -14,5 +14,5 @@ metadata:
   hello: newHello
 spec:
   type: service
-  lifecycle: updated
+  lifecycle: production
   owner: team-b
