@@ -15,4 +15,4 @@ metadata:
 spec:
   type: service
   lifecycle: updated
-  owner: team-b
+  owner: team-c
