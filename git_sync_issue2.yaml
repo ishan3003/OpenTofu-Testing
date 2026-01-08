@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: testgitsyncissue2
+name: test-gitsync-issue-2
+owner: ishan.gude@harness.ip
+spec:
+  lifecycle: deprecated
+metadata:
+  description: Default Branch test
+  tags:
+  - bn

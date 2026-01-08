@@ -13,7 +13,7 @@ metadata:
   description: An template for the scaffolder that triggers a simple pipeline
   tags:
     - pipeline
-    - harness
+    - harness1
   uid: 870c4f18-095e-4c52-b92d-ed3f2532238f
   etag: bc52d1f7005a4f8a8102af69e16747141b6da69f
 spec:

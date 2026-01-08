@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Group
+type: team
+identifier: testgroup
+name: test-group
+spec:
+  lifecycle: ''
+  parent: group:account/testidp1
+  members:
+  - user:account/ishan.gude@harness.io
+  profile:
+    email: test@xyz.com

@@ -1,0 +1,14 @@
+apiVersion: harness.io/v1
+kind: Component
+type: test
+identifier: testcreatescorecardcheck
+name: test-create-scorecard-check
+owner: user:account/devesh.mishra@harness.io
+spec:
+  lifecycle: production
+  system:
+  - system:account/testsystemcatalogcustomization
+metadata:
+  description: Scorecard check
+  tags:
+  - asddd
