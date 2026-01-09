@@ -1,0 +1,16 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: GITHUBAUTOMATIONDoNotDelete1
+name: GITHUB-AUTOMATION-Do-Not-Delete
+owner: group:account/testentitiesapigroup
+spec:
+  lifecycle: deprecated
+metadata:
+  description: wssx
+  annotations:
+    pagerduty.com/service-id: IDP
+    backstage.io/source-location: url:https://github.com/sathish-soundarapandian/onboarding-test
+  tags:
+  - automation
+  - automation-github
