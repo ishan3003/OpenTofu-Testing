@@ -1,7 +1,7 @@
 apiVersion: harness.io/v1
 kind: Component
 type: service
-identifier: GITHUBAUTOMATIONDoNotDelete1
+identifier: GITHUBAUTOMATIONDoNotDelete
 name: GITHUB-AUTOMATION-Do-Not-Delete
 owner: group:account/testentitiesapigroup
 spec:

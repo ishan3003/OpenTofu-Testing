@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: IdpAutomation-New
+  namespace: default
+  description: Camel Case Updated
+  annotations:
+    gitlab.com/project-id: '43877214'
+    jira/project-key: IDP
+    firehydrant.com/service-name: 'python-pipeline-samples'
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '63feee14cbf66e3c798c4bdc'
+    jenkins.io/job-full-name: 'CDS-68313'
+  hello: newHello
+spec:
+  type: service
+  lifecycle: updated
+  owner: team-b
