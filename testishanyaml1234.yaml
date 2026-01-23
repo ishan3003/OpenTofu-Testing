@@ -1,0 +1,95 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: workflow
+identifier: testnondefaultworkflow
+name: test-non-default-workflow
+owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
+spec:
+  output:
+    text:
+    - title: Pipeline Execution Summary
+      icon: description
+      content: "✅ Both pipelines executed successfully.  \n"
+    - title: Next Steps
+      icon: check_circle
+      content: "## 📊 Test Pipelines Report\n\nThe following pipelines were executed\
+        \ as part of this workflow run:\n\n### ✅ Test 1 Pipeline\n- Status: **Success**\
+        \  \n- Triggered automatically after code push  \n- Runs the **unit test suite**,\
+        \ **lint checks**, and **basic integration tests**  \n- Duration: ~5 minutes\
+        \  \n- Artifacts: Stored in the S3 bucket (`/builds/test1/`)  \n\n### ⚡ Test\
+        \ 2 Pipeline\n- Status: **Success**  \n- Includes **load testing** and **API\
+        \ contract validation**  \n- Duration: ~12 minutes  \n- Artifacts: Stored\
+        \ in the S3 bucket (`/builds/test2/`)  \n\n### 🔍 Observations\n- Both pipelines\
+        \ completed without errors  \n- Coverage remained stable at **85%**  \n- No\
+        \ flaky tests detected in this run  \n\n---\n👉 Use the links below to access\
+        \ full pipeline details and logs.\n"
+      default: true
+    links:
+    - title: Test 1 Pipeline Details
+      icon: link
+      url: ${{ steps.test_pipeline.output.PipelineUrl }}
+    - title: Test 2 Pipeline Details
+      icon: link
+      url: ${{ steps.testab_pipeline.output.PipelineUrl }}
+    - title: Catalog Details for triggermultiplepipelines
+      icon: link
+      entityRef: workflow:account/triggermultiplepipelines
+  parameters:
+  - title: Service Information
+    required:
+    - token
+    properties:
+      service_name:
+        title: Service Name
+        type: string
+        description: Name of the service
+      environment:
+        title: Environment
+        type: string
+        description: Target environment for deployment
+      description:
+        title: Description
+        type: string
+        description: Description of the service
+        ui:widget: textarea
+      token:
+        title: Harness Token
+        type: string
+        description: Authentication token for Harness API
+        ui:widget: password
+        ui:field: HarnessAuthToken
+  steps:
+  - id: fetch-repo
+    name: Fetch Source Code
+    action: fetch:plain
+    input:
+      url: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/resources/artists-db-resource.yaml
+      targetPath: ./fetched-config
+  - id: test_pipeline
+    name: Grouped Pipeline
+    action: trigger:harness-custom-pipeline
+    input:
+      url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/all/orgs/default/projects/IDPtest/pipelines/Samriddhi_Test_2/pipeline-studio/?storeType=INLINE
+      inputset: {}
+      apikey: ${{ parameters.token }}
+    onFailure:
+      action: abort
+      errors:
+      - Pipeline execution failed
+  - id: testab_pipeline
+    name: Run Pipeline
+    action: trigger:harness-custom-pipeline
+    input:
+      url: https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/all/orgs/default/projects/IDPtest/pipelines/Samriddhi_Test_1/pipeline-studio/?storeType=INLINE
+      inputset: {}
+      apikey: ${{ parameters.token }}
+    onFailure:
+      action: abort
+      errors:
+      - Pipeline execution failed
+metadata:
+  description: A workflow that triggers two Harness pipelines in sequence
+  tags:
+  - test
+  - pipeline
+  - workflow

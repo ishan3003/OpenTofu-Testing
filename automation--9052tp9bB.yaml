@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: idp-ui-automation-type
+identifier: idpentitycreategitfeaturebranch
+name: idp-automation-git-feature-branch-edited
+owner: idp-automation
+spec:
+  lifecycle: deprecated
+metadata:
+  description: Edited the Entity
+  tags:
+  - java

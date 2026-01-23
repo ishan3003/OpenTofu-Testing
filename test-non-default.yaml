@@ -1,0 +1,19 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: harness_project
+identifier: testnondefault
+name: test-non-default
+owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
+spec:
+  parameters: {}
+  steps:
+  - id: trigger
+    name: Creating your appication
+    action: trigger:harness-custom-pipeline
+    input:
+      url:
+      - https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/module/ci/orgs/default/projects/ishantestscope/pipelines/hello_world_pipeline/pipeline-studio/?storeType=INLINE
+metadata:
+  description: dwss
+  tags:
+  - adss

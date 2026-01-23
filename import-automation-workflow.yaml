@@ -1,0 +1,40 @@
+apiVersion: harness.io/v1
+kind: Workflow
+name: idp-automation-workflow-import
+identifier: idpautomationworkflowimport
+type: workflow
+owner: user:account/idp-api-automation-only-v2@harnessioprivate.testinator.com
+scope: ACCOUNT
+metadata:
+  description: Import Workflow Flow
+  tags:
+    - java
+spec:
+  parameters:
+    - title: Service Details
+      required:
+        - service_name
+      properties:
+        token:
+          title: Harness Token
+          type: string
+          ui:widget: password
+          ui:field: HarnessAuthToken
+        service_name:
+          title: Service Name
+          type: string
+          description: Mention the project name
+  steps:
+    - id: trigger
+      name: Creating your appication
+      action: trigger:harness-custom-pipeline
+      input:
+        url: Harness Pipeline URL
+        inputset:
+          service_name: ${{ parameters.service_name }}
+        apikey: ${{ parameters.token }}
+  output:
+    links:
+      - title: Pipeline Details
+        url: ${{ steps.trigger.output.PipelineUrl }}
+  lifecycle: experimental

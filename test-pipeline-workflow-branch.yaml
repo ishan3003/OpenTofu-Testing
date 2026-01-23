@@ -1,8 +1,8 @@
 apiVersion: harness.io/v1
 kind: Workflow
 type: workflow
-identifier: testworkflowbugbash
-name: test-workflow-bugbash
+identifier: TestWorkflowBranchselector
+name: Test-Workflow-Branch-selector
 owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
 spec:
   output:
@@ -30,7 +30,7 @@ spec:
     action: trigger:harness-custom-pipeline
     input:
       url:
-      - Harness Pipeline URL
-      inputset:
-        service_name: ${{ parameters.service_name }}
-      apikey: ${{ parameters.token }}
+      - https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/module/ci/orgs/default/projects/ishantestscope/pipelines/hello_world_pipeline/pipeline-studio/?storeType=INLINE
+metadata:
+  tags:
+  - bn

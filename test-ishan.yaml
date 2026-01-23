@@ -1,9 +1,9 @@
 apiVersion: harness.io/v1
 kind: Workflow
 type: workflow
-identifier: testworkflowbugbash
-name: test-workflow-bugbash
-owner: user:account/idp-ui-automation@harnessioprivate.testinator.com
+identifier: testworkflow
+name: test-workflow
+owner: user:account/timothy.davis@harness.io
 spec:
   output:
     links:
@@ -34,3 +34,7 @@ spec:
       inputset:
         service_name: ${{ parameters.service_name }}
       apikey: ${{ parameters.token }}
+metadata:
+  description: asxaz
+  tags:
+  - bn

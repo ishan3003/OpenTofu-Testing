@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "hello-world-app-create"
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/backstage/backstage/tree/master/plugins/techdocs-backend/examples/documented-component
+    github.com/project-slug: https://github.com/ishan3003/OpenTofu-Testing
+    backstage.io/kubernetes-label-selector: 'app=idp-ui'
+    backstage.io/kubernetes-namespace: '642d4b9741ee3c555d4e1a7f'
+    jira/project-key: IDP
+    pagerduty.com/service-id: PA6QFF0
+    circleci.com/project-slug: github/vigneswara-propelo/python-pipeline-samples
+    jenkins.io/github-folder: 'CDS-68313'
+    firehydrant.com/service-name: 'pipeline-service'
+    abc: def
+spec:
+  type: service
+  owner: "IDPAdmin"
+  lifecycle: experimental

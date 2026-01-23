@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: AccessControl
+  name: accesscontrol-service
   description: The official Access control REST APIs
 spec:
   type: openapi

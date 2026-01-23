@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: accesscontrol-service
-  description: The official Access control REST APIs
+  name: Access-Control
+  description: The official Access control REST
 spec:
   type: openapi
-  lifecycle: production
+  lifecycle: development
   owner: plplayacc
   definition: |-
     // Copyright 2015 gRPC authors.

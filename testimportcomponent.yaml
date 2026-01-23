@@ -1,8 +1,8 @@
 apiVersion: harness.io/v1
 kind: Component
 type: idp-ui-automation-type
-identifier: test124
-name: test-plugin-enablement
+identifier: testimportyaml123
+name: testimportyaml
 owner: timothy
 spec:
   lifecycle: deprecated
