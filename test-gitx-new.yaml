@@ -1,0 +1,19 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: githubsanitycheckgitx
+name: github-sanity-check-gitx
+owner: group:account/_account_all_users
+spec:
+  lifecycle: production
+  sourceCode:
+    provider: Github
+    repoName: OpenTofu-Testing
+    connectorRef: account.ishan_git
+    branch: main
+    monoRepo: false
+    url: https://github.com/ishan3003/OpenTofu-Testing/tree/main
+metadata:
+  description: aa
+  tags:
+  - ishan-test
