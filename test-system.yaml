@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testidpnew
+name: test-idp-new
+owner: group:account/AAAFF
+spec:
+  lifecycle: lifecycle-new
+metadata:
+  description: xx
+  tags:
+  - java
