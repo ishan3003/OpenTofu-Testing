@@ -1,0 +1,15 @@
+apiVersion: harness.io/v1
+kind: API
+type: test
+identifier: testapiprojectmovement
+name: test-api-project-movement
+owner: group:account/_test_underscore_group
+orgIdentifier: Project_Movement_IDP_OrgB
+projectIdentifier: Project_A_IDP
+spec:
+  lifecycle: experimental
+  definition: grpc
+metadata:
+  description: zza
+  tags:
+  - java
