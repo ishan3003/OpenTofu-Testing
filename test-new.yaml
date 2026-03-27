@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: testnew
+name: test-new
+owner: group:account/Test_User_group123
+spec:
+  lifecycle: deprecated
+metadata:
+  description: n jn
+  tags:
+  - java
