@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: Component_GitX_Sanity
+name: Component GitX Sanity
+owner: group:account/_account_all_users
+spec:
+  lifecycle: production
+metadata:
+  description: Test
+  tags:
+  - test
