@@ -7,6 +7,6 @@ owner: group:account/_account_all_users
 spec:
   lifecycle: production
 metadata:
-  description: Test
+  description: Docs Update
   tags:
   - test
