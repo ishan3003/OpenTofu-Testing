@@ -1,0 +1,37 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: workflow
+identifier: Dummy_101_Gitx
+name: Dummy 101 Gitx
+owner: user:account/deepesh.kumar@harness.io
+spec:
+  output:
+    links:
+    - title: Pipeline Details
+      url: ${{ steps.trigger.output.PipelineUrl }}
+  lifecycle: test
+  parameters:
+  - title: Service Details
+    properties:
+      token:
+        title: Harness Token
+        type: string
+        ui:widget: password
+        ui:field: HarnessAuthToken
+      service_name:
+        title: Service Name
+        type: string
+        description: Mention the project name
+  steps:
+  - id: trigger
+    name: Creating your appication
+    action: trigger:harness-custom-pipeline
+    input:
+      url: https://qa.harness.io/ng/account/rzjR8UyZTpOAd6SLDfdBuw/module/cd/orgs/default/projects/DeepeshIDP/pipelines/Test/pipeline-studio/?storeType=INLINE
+      inputset:
+        service_name: ${{ parameters.service_name }}
+      apikey: ${{ parameters.token }}
+metadata:
+  description: 'dummy '
+  tags:
+  - test-sanity
