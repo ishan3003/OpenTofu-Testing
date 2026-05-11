@@ -1,0 +1,21 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: Starring_GitX_Entities
+name: Starring GitX Entities
+owner: group:account/_account_all_users
+spec:
+  lifecycle: unknown
+  sourceCode:
+    provider: Github
+    repoName: Automation-Repo-Github
+    connectorRef: account.ishanconnector
+    branch: main
+    monoRepo: false
+    url: https://github.com/ishan3003/Automation-Repo-Github/tree/main
+  system:
+  - system:account/child_system_1
+metadata:
+  description: sdxs
+  tags:
+  - sto
