@@ -1,0 +1,14 @@
+kind: Component
+apiVersion: backstage.io/v1alpha1
+metadata:
+  name: syncstepaccountsvcenvautomation
+  annotations: {}
+  title: syncstepaccountsvcenvautomation
+  tags: []
+spec:
+  type: Service
+  lifecycle: Unknown
+  owner: Unknown
+  domain: Unknown
+  system:
+    - Unknown
