@@ -1,0 +1,23 @@
+
+  {
+    "name": "mock-azure-sub-001",
+    "cloud_type": "azure",
+    "properties": {
+      "subscription_id": "00000000-0000-0000-0000-000000000001"
+    }
+  },
+  {
+    "name": "mock-azure-sub-002",
+    "cloud_type": "azure",
+    "properties": {
+      "subscription_id": "00000000-0000-0000-0000-000000000002"
+    }
+  },
+  {
+    "name": "mock-azure-sub-003",
+    "cloud_type": "azure",
+    "properties": {
+      "subscription_id": "00000000-0000-0000-0000-000000000003"
+    }
+  }
+]
