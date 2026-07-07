@@ -1,0 +1,25 @@
+apiVersion: harness.io/v1
+kind: API
+type: openapi
+identifier: e2e_api_inline_json_gitx_new
+name: e2e-api-inline-json
+owner: johndoe
+spec:
+  lifecycle: production
+  definition: |
+    {
+      "openapi": "3.0.3",
+      "info": { "title": "Petstore API", "version": "1.0.0" },
+      "servers": [{ "url": "https://petstore.example.com/v1" }],
+      "paths": {
+        "/pets": {
+          "get": { "summary": "List all pets", "operationId": "listPets", "tags": ["pets"], "responses": { "200": { "description": "A paged array of pets" } } },
+          "post": { "summary": "Create a pet", "operationId": "createPet", "tags": ["pets"], "responses": { "201": { "description": "Created" } } }
+        },
+        "/pets/{petId}": {
+          "get": { "summary": "Info for a specific pet", "operationId": "getPetById", "tags": ["pets"], "responses": { "200": { "description": "Expected response to a valid request" } } }
+        }
+      }
+    }
+metadata:
+  description: Inline JSON OpenAPI spec for endpoint-extraction testing
