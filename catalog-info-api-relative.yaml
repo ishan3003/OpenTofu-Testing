@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: API
+type: openapi
+identifier: e2e_api_gitx_relative
+name: e2e-api-gitx-relative
+owner: johndoe
+spec:
+  lifecycle: production
+  definition:
+    $text: "./openapi.yaml"
+metadata:
+  description: TC3.5 - relative path ./openapi.yaml, registered from Git
