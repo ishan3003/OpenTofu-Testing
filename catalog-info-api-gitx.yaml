@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: API
+type: openapi
+identifier: e2e_api_gitx_yaml_gitx
+name: e2e-api-gitx-yaml
+owner: johndoe
+spec:
+  lifecycle: production
+  definition:
+    $yaml: "https://github.com/ishan3003/OpenTofu-Testing/blob/main/openapi.yaml"
+metadata:
+  description: TC3.4 - $yaml blob, entity registered from Git (GitX)
