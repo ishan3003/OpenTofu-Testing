@@ -34,10 +34,9 @@ paths:
       responses:
         "200":
           description: Expected response to a valid request
-  /pets/{petId}:
     delete:
-      summary: Info for a specific pet
-      operationId: getPetById
+      summary: Delete a pet
+      operationId: deletePet
       tags: [pets]
       parameters:
         - name: petId
@@ -47,4 +46,4 @@ paths:
             type: string
       responses:
         "204":
-          description: Expected response to a valid request
+          description: Deleted
