@@ -7,6 +7,6 @@ owner: group:account/accountAdmin
 spec:
   lifecycle: experimenta
 metadata:
-  description: Test
+  description: Test-update
   tags:
   - java
