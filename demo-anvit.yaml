@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: Test_Sanity_Catalog
+name: Test Sanity Catalog
+owner: group:account/accountAdmin
+spec:
+  lifecycle: experimenta
+metadata:
+  description: Test
+  tags:
+  - java
