@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: component
+identifier: Testconnectorgitxnew
+name: Test-invalid-connector
+owner: group:account/AAAFF
+spec:
+  lifecycle: experimenta
+metadata:
+  description: Test
+  tags:
+  - java
