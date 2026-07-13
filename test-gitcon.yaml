@@ -7,6 +7,6 @@ owner: group:account/AAAFF
 spec:
   lifecycle: experimenta
 metadata:
-  description: Test
+  description: Test-updated
   tags:
   - java
