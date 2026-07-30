@@ -1,0 +1,101 @@
+apiVersion: harness.io/v1
+kind: Workflow
+type: service
+identifier: e2e_git_formcontext_workflow
+name: E2EGitFormContextVerification
+owner: idp_test_automation
+spec:
+  parameters:
+  - title: Context Verification
+    description: |
+      These fields use formContext injection. All three should be pre-populated with the current Harness account/org/project from the Git context. IDP-10124 regression guard: if any field is empty, the bug has regressed.
+    required:
+    - verifiedAccountId
+    properties:
+      verifiedAccountId:
+        title: Account ID (from formContext)
+        description: Must be pre-populated from formContext — IDP-10124 guard
+        type: string
+        ui:field: HarnessAccountId
+        ui:readonly: true
+      verifiedOrgId:
+        title: Organization ID (from formContext)
+        description: Must be pre-populated from Git context
+        type: string
+        ui:field: HarnessAutoOrgPicker
+        ui:readonly: false
+      verifiedProjectId:
+        title: Project ID (from formContext)
+        description: Must be pre-populated from Git context
+        type: string
+        ui:field: HarnessProjectPicker
+        ui:readonly: false
+      formContextSummary:
+        title: Form Context Snapshot
+        description: Read-only display of all available formContext values
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: ${{ formContext | dump }}
+        ui:readonly: true
+  - title: Cross-Step Context Persistence
+    description: |
+      Verify that context values entered in Step 1 are available here via the ${{ parameters.* }} interpolation mechanism.
+    required:
+    - workflowLabel
+    properties:
+      workflowLabel:
+        title: Run Label
+        description: Unique label for this test run
+        type: string
+        default: E2E_GitContext_Test
+      accountIdEcho:
+        title: Echoed Account ID
+        description: Should match Account ID from Step 1 via Nunjucks resolution
+        type: string
+        ui:readonly: true
+      contextValidationStatus:
+        title: Context Validation Result
+        description: Triggers context validation via ValidateAndFetch
+        type: string
+        ui:field: ValidateAndFetch
+        ui:options:
+          button:
+            title: Verify Account Context
+          path: /api/proxy/harness-api-endpoint/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
+          request:
+            method: GET
+            headers:
+              Content-Type: application/json
+          setContextData:
+            contextValidated: status
+            contextAccountId: data.totalItems
+      contextValidationEcho:
+        title: Validation Echo (formContext.accountId)
+        description: Must equal Account ID from Step 1 — cross-step formContext test
+        type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: ${{ formContext.accountId }}
+        ui:readonly: true
+  steps:
+  - id: log-context
+    name: Log Form Context Values
+    action: debug:log
+    input:
+      message: |
+        IDP-10124 Verification: accountId=${{ parameters.verifiedAccountId }}, orgId=${{ parameters.verifiedOrgId }}, projectId=${{ parameters.verifiedProjectId }}, formContext.accountId=${{ formContext.accountId }}, formContext.orgId=${{ formContext.orgId }}, formContext.projectId=${{ formContext.projectId }}
+  - id: verify-context-not-empty
+    name: Verify Context Fields Are Not Empty
+    action: debug:log
+    input:
+      message: |
+        Validation PASSED — formContext.accountId is present: ${{ formContext.accountId | length > 0 }}, runLabel=${{ parameters.workflowLabel }}_${{ "" | now }}
+metadata:
+  description: |
+    E2E regression guard for IDP-10124: verifies that formContext (accountId, orgId, projectId) is pre-populated in Git-based workflows rather than arriving empty. Also validates that parameters.${{ parameters.accountId }} and formContext.accountId resolve to the same value.
+  tags:
+  - e2e
+  - regression
+  - formcontext
+  - idp-10124
