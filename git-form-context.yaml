@@ -16,16 +16,16 @@ spec:
         type: string
         ui:widget: hidden
         default: LGXtnRJ6S36Fn4i2RmOstg
-      verifiedOrgId:
-        title: Organization ID (from formContext)
-        description: Must be pre-populated from Git context
-        type: string
-        ui:field: HarnessAutoOrgPicker
       verifiedProjectId:
         title: Project ID (from formContext)
-        description: Must be pre-populated from Git context
+        description: Select the project — org auto-populates from this selection
         type: string
         ui:field: HarnessProjectPicker
+      verifiedOrgId:
+        title: Organization ID (from formContext)
+        description: Auto-populated from the selected project
+        type: string
+        ui:field: HarnessAutoOrgPicker
       formContextSummary:
         title: Form Context Snapshot
         description: Read-only display of all available formContext values
