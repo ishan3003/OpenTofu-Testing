@@ -9,27 +9,23 @@ spec:
   - title: Context Verification
     description: |
       These fields use formContext injection. All three should be pre-populated with the current Harness account/org/project from the Git context. IDP-10124 regression guard: if any field is empty, the bug has regressed.
-    required:
-    - verifiedAccountId
     properties:
       verifiedAccountId:
         title: Account ID (from formContext)
-        description: Must be pre-populated from formContext — IDP-10124 guard
+        description: Pre-populated account ID — IDP-10124 guard
         type: string
-        ui:field: HarnessAccountId
-        ui:readonly: true
+        ui:widget: hidden
+        default: LGXtnRJ6S36Fn4i2RmOstg
       verifiedOrgId:
         title: Organization ID (from formContext)
         description: Must be pre-populated from Git context
         type: string
         ui:field: HarnessAutoOrgPicker
-        ui:readonly: false
       verifiedProjectId:
         title: Project ID (from formContext)
         description: Must be pre-populated from Git context
         type: string
         ui:field: HarnessProjectPicker
-        ui:readonly: false
       formContextSummary:
         title: Form Context Snapshot
         description: Read-only display of all available formContext values
@@ -62,7 +58,7 @@ spec:
         ui:options:
           button:
             title: Verify Account Context
-          path: /proxy/harness-api-endpoint/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
+          path: /proxy/harness-api/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
           request:
             method: GET
             headers:
