@@ -35,7 +35,7 @@ spec:
         type: string
         ui:field: ContextViewer
         ui:options:
-          getContextData: ${{ formContext | dump }}
+          getContextData: ${{formContext}}
         ui:readonly: true
   - title: Cross-Step Context Persistence
     description: |
