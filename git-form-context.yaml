@@ -52,6 +52,9 @@ spec:
         title: Echoed Account ID
         description: Should match Account ID from Step 1 via Nunjucks resolution
         type: string
+        ui:field: ContextViewer
+        ui:options:
+          getContextData: ${{formContext.formData.verifiedAccountId}}
         ui:readonly: true
       contextValidationStatus:
         title: Context Validation Result
@@ -75,7 +78,7 @@ spec:
         type: string
         ui:field: ContextViewer
         ui:options:
-          getContextData: ${{ formContext.accountId }}
+          getContextData: ${{formContext.accountId}}
         ui:readonly: true
   steps:
   - id: log-context
