@@ -62,7 +62,7 @@ spec:
         ui:options:
           button:
             title: Verify Account Context
-          path: /api/proxy/harness-api-endpoint/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
+          path: /proxy/harness-api-endpoint/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
           request:
             method: GET
             headers:
