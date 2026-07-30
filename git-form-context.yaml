@@ -26,6 +26,9 @@ spec:
         description: Auto-populated from the selected project
         type: string
         ui:field: HarnessAutoOrgPicker
+        dependencies:
+          projectPickerRef:
+          - verifiedProjectId
       formContextSummary:
         title: Form Context Snapshot
         description: Read-only display of all available formContext values
