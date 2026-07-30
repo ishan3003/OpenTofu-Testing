@@ -64,14 +64,14 @@ spec:
         ui:options:
           button:
             title: Verify Account Context
-          path: /proxy/harness-api/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=10
+          path: /proxy/harness-api/ng/api/accounts/{{parameters.verifiedAccountId}}
           request:
             method: GET
             headers:
               Content-Type: application/json
           setContextData:
             contextValidated: status
-            contextAccountId: data.totalItems
+            contextAccountId: data.identifier
       contextValidationEcho:
         title: Validation Echo (formContext.accountId)
         description: Must equal Account ID from Step 1 — cross-step formContext test
