@@ -64,7 +64,7 @@ spec:
         ui:options:
           button:
             title: Verify Account Context
-          path: /proxy/harness-api/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=1
+          path: /proxy/harness-api/ng/api/projects?accountIdentifier={{parameters.verifiedAccountId}}&hasModule=true&pageIndex=0&pageSize=10
           request:
             method: GET
             headers:
@@ -78,7 +78,7 @@ spec:
         type: string
         ui:field: ContextViewer
         ui:options:
-          getContextData: ${{formContext.accountId}}
+          getContextData: ${{formContext.formData.verifiedAccountId}}
         ui:readonly: true
   steps:
   - id: log-context
