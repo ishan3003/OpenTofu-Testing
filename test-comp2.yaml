@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_b
+name: component_b
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Auth service component
