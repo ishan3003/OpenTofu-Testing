@@ -1,0 +1,14 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: Test_Component_non_defauly
+name: Test Component non defauly
+owner: group:account/_test_underscore_group
+spec:
+  lifecycle: experimenta
+  system:
+  - system:account/Test_System_Git_Branch
+metadata:
+  tags:
+  - java
+  - spotify
