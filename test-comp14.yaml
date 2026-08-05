@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_n
+name: component_n
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Email service component
