@@ -1,0 +1,11 @@
+apiVersion: harness.io/v1
+kind: System
+type: system
+identifier: Test_System_Git_Branch
+name: Test System Git Branch
+owner: group:account/_test_underscore_group
+spec:
+  lifecycle: ''
+metadata:
+  tags:
+  - spotify
