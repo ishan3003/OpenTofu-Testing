@@ -1,0 +1,8 @@
+apiVersion: harness.io/v1
+kind: System
+identifier: my_test_system
+name: my_test_system
+owner: user:your_user
+spec: {}
+metadata:
+  description: Test system for relation graph repro
