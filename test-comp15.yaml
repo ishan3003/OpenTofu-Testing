@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_o
+name: component_o
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Billing service component
