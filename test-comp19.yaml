@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_s
+name: component_s
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Gateway service component
