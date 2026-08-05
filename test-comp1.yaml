@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_a
+name: component_a
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Component A for relation graph repro
