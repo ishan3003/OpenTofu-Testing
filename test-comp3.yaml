@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_c
+name: component_c
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Notification service component
