@@ -1,5 +1,6 @@
 apiVersion: harness.io/v1
 kind: System
+type: system
 identifier: my_test_system
 name: my_test_system
 owner: user:your_user
