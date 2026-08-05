@@ -1,0 +1,12 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: sys_comp_14
+name: sys_comp_14
+owner: group:account/_test_underscore_group
+spec:
+  lifecycle: experimenta
+  system:
+  - system:account/Test_System_Git_Branch
+metadata:
+  description: Email dispatch service
