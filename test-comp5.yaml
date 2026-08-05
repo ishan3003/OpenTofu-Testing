@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_e
+name: component_e
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Order processing component
