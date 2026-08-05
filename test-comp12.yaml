@@ -1,0 +1,10 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: component_l
+name: component_l
+owner: user:your_user
+spec:
+  lifecycle: production
+metadata:
+  description: Data pipeline component
