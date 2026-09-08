@@ -1,0 +1,10 @@
+{
+  "data": {
+    "content": [
+      { "identifier": "Managers", "name": "Managers" },
+      { "identifier": "Product_Admin", "name": "Product Admin" },
+      { "identifier": "Developer", "name": "Developer" },
+      { "identifier": "ReadOnly", "name": "Read Only" }
+    ]
+  }
+}
