@@ -1,23 +1,50 @@
 [
   {
+    "id": "mock-pangea-id-001",
     "name": "mock-azure-sub-001",
     "cloud_type": "azure",
     "properties": {
-      "subscription_id": "00000000-0000-0000-0000-000000000001"
+      "subscription_id": "00000000-0000-0000-0000-000000000001",
+      "tenant_name": "MockTenant001",
+      "regions": [
+        { "name": "eastus" },
+        { "name": "westus2" },
+        { "name": "centralus" },
+        { "name": "northeurope" },
+        { "name": "westeurope" }
+      ]
     }
   },
   {
+    "id": "mock-pangea-id-002",
     "name": "mock-azure-sub-002",
     "cloud_type": "azure",
     "properties": {
-      "subscription_id": "00000000-0000-0000-0000-000000000002"
+      "subscription_id": "00000000-0000-0000-0000-000000000002",
+      "tenant_name": "MockTenant002",
+      "regions": [
+        { "name": "eastus" },
+        { "name": "westus2" },
+        { "name": "centralus" },
+        { "name": "northeurope" },
+        { "name": "westeurope" }
+      ]
     }
   },
   {
+    "id": "mock-pangea-id-003",
     "name": "mock-azure-sub-003",
     "cloud_type": "azure",
     "properties": {
-      "subscription_id": "00000000-0000-0000-0000-000000000003"
+      "subscription_id": "00000000-0000-0000-0000-000000000003",
+      "tenant_name": "MockTenant003",
+      "regions": [
+        { "name": "eastus" },
+        { "name": "westus2" },
+        { "name": "centralus" },
+        { "name": "northeurope" },
+        { "name": "westeurope" }
+      ]
     }
   }
 ]
