@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "projectKey": "PROJ-A",
+      "name": "Alpha Platform Services",
+      "owner": "team-alpha",
+      "dlGroup": "dl-alpha-team",
+      "moduleUuid": "uuid-alpha-001",
+      "moduleName": "Alpha Module",
+      "configurationSysId": "true"
+    },
+    {
+      "projectKey": "PROJ-B",
+      "name": "Beta Infrastructure",
+      "owner": "team-beta",
+      "dlGroup": "dl-beta-team",
+      "moduleUuid": "uuid-beta-002",
+      "moduleName": "Beta Module",
+      "configurationSysId": "false"
+    },
+    {
+      "projectKey": "PROJ-C",
+      "name": "Gamma Bifrost Services",
+      "owner": "team-gamma",
+      "dlGroup": "dl-gamma-team",
+      "moduleUuid": "uuid-gamma-003",
+      "moduleName": "Gamma Module",
+      "configurationSysId": "true"
+    },
+    {
+      "projectKey": "PROJ-D",
+      "name": "Delta Application",
+      "owner": "team-delta",
+      "dlGroup": "dl-delta-team",
+      "moduleUuid": "uuid-delta-004",
+      "moduleName": "Delta Module",
+      "configurationSysId": "false"
+    }
+  ]
+}
