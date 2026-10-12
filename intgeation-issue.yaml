@@ -3,7 +3,7 @@ kind: Component
 type: service
 identifier: idpintegrationgitsyncissue
 name: kubernetes-plugin
-owner: group:account/AI_Test_Automation
+owner: group:account/Build_Engineering
 spec:
   lifecycle: qa
 metadata:
