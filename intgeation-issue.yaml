@@ -1,0 +1,11 @@
+apiVersion: harness.io/v1
+kind: Component
+type: service
+identifier: idpintegrationgitsyncissue
+name: idp-integration-gitsync-issue
+owner: group:account/AI_Test_Automation
+spec:
+  lifecycle: qa
+metadata:
+  tags:
+  - core-service
