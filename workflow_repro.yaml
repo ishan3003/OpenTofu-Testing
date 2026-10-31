@@ -1,32 +1,31 @@
 apiVersion: harness.io/v1
 kind: Workflow
 type: service
-identifier: idp_11666_git_cache_gitx
+identifier: idp_11666_git_cache
 name: IDP-11666 Git cache check
 owner: user@harness.io
-spec:
-  output:
-    links:
-    - title: Done
-      url: https://harness.io
-  parameters:
-  - title: CACHE_MARKER_V1
-    required:
-    - marker
-    properties:
-      marker:
-        title: Marker
-        type: string
-        description: Change this title between commits to see whether the wizard still
-          shows the old YAML.
-        default: v1
-  steps:
-  - id: log
-    name: Log marker
-    action: debug:log
-    input:
-      message: ${{ parameters.marker }}
 metadata:
   description: Remote workflow used to check branch-list cache and workflow.yaml refresh.
   tags:
-  - idp-11666
+    - idp-11666
+spec:
+  output:
+    links:
+      - title: Done
+        url: https://harness.io
+  parameters:
+    - title: CACHE_MARKER_V2
+      required:
+        - marker
+      properties:
+        marker:
+          title: Marker
+          type: string
+          description: If the run page still shows CACHE_MARKER_V1, the wizard is serving the cached workflow.yaml.
+          default: v2
+  steps:
+    - id: log
+      name: Log marker
+      action: debug:log
+      input:
+        message: ${{ parameters.marker }}
