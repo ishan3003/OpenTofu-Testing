@@ -1,7 +1,7 @@
 {
   "data": {
     "hasAdGroup": true,
-    "idpHasAdGroup": "idpHasAdGroup-1",
+    "idpHasAdGroup": "true",
     "developerGroupName": "developerGroupName-1",
     "reviewerGroupName": "reviewerGroupName-1"
   }

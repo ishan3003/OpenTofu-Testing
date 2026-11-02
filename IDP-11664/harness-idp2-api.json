@@ -5,7 +5,7 @@
     "metadata": {
       "aws_region": "aws_region-1",
       "aws_account": "aws_account-1",
-      "environment_type": "environment_type-1",
+      "environment_type": "prod",
       "environment": "environment-1"
     },
     "entity_ref": "entity_ref-1"
@@ -16,7 +16,7 @@
     "metadata": {
       "aws_region": "aws_region-2",
       "aws_account": "aws_account-2",
-      "environment_type": "environment_type-2",
+      "environment_type": "test",
       "environment": "environment-2"
     },
     "entity_ref": "entity_ref-2"
@@ -27,7 +27,7 @@
     "metadata": {
       "aws_region": "aws_region-3",
       "aws_account": "aws_account-3",
-      "environment_type": "environment_type-3",
+      "environment_type": "dev",
       "environment": "environment-3"
     },
     "entity_ref": "entity_ref-3"
