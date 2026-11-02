@@ -1,13 +1,13 @@
 {
   "tree": [
     {
-      "path": "path-1"
+      "path": "openapi/spec-1.yaml"
     },
     {
-      "path": "path-2"
+      "path": "openapi/spec-2.yaml"
     },
     {
-      "path": "path-3"
+      "path": "openapi/spec-3.yaml"
     }
   ]
 }
