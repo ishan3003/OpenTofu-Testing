@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "metadata": {
+        "name": "name-1"
+      }
+    },
+    {
+      "metadata": {
+        "name": "name-2"
+      }
+    },
+    {
+      "metadata": {
+        "name": "name-3"
+      }
+    }
+  ]
+}

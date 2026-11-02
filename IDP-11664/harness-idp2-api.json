@@ -1,0 +1,35 @@
+[
+  {
+    "name": "name-1",
+    "identifier": "identifier-1",
+    "metadata": {
+      "aws_region": "aws_region-1",
+      "aws_account": "aws_account-1",
+      "environment_type": "environment_type-1",
+      "environment": "environment-1"
+    },
+    "entity_ref": "entity_ref-1"
+  },
+  {
+    "name": "name-2",
+    "identifier": "identifier-2",
+    "metadata": {
+      "aws_region": "aws_region-2",
+      "aws_account": "aws_account-2",
+      "environment_type": "environment_type-2",
+      "environment": "environment-2"
+    },
+    "entity_ref": "entity_ref-2"
+  },
+  {
+    "name": "name-3",
+    "identifier": "identifier-3",
+    "metadata": {
+      "aws_region": "aws_region-3",
+      "aws_account": "aws_account-3",
+      "environment_type": "environment_type-3",
+      "environment": "environment-3"
+    },
+    "entity_ref": "entity_ref-3"
+  }
+]

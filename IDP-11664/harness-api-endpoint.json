@@ -1,0 +1,24 @@
+{
+  "data": {
+    "content": [
+      {
+        "infrastructure": {
+          "identifier": "identifier-1",
+          "name": "name-1"
+        }
+      },
+      {
+        "infrastructure": {
+          "identifier": "identifier-2",
+          "name": "name-2"
+        }
+      },
+      {
+        "infrastructure": {
+          "identifier": "identifier-3",
+          "name": "name-3"
+        }
+      }
+    ]
+  }
+}

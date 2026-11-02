@@ -1,0 +1,21 @@
+{
+  "data": {
+    "content": [
+      {
+        "envGroup": {
+          "name": "name-1"
+        }
+      },
+      {
+        "envGroup": {
+          "name": "name-2"
+        }
+      },
+      {
+        "envGroup": {
+          "name": "name-3"
+        }
+      }
+    ]
+  }
+}

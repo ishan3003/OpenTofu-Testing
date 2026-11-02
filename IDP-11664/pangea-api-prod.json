@@ -1,0 +1,42 @@
+[
+  {
+    "name": "name-1",
+    "properties": {
+      "subscription_id": "subscription_id-1",
+      "tenant_name": "tenant_name-1",
+      "regions": [
+        {
+          "name": "name-1"
+        },
+        {
+          "name": "name-2"
+        },
+        {
+          "name": "name-3"
+        }
+      ],
+      "allowed_resource_env": [
+        "env-1",
+        "env-2",
+        "env-3"
+      ]
+    },
+    "id": "id-1"
+  },
+  {
+    "name": "name-2",
+    "properties": {
+      "subscription_id": "subscription_id-2",
+      "tenant_name": "tenant_name-2"
+    },
+    "id": "id-2"
+  },
+  {
+    "name": "name-3",
+    "properties": {
+      "subscription_id": "subscription_id-3",
+      "tenant_name": "tenant_name-3"
+    },
+    "id": "id-3"
+  }
+]

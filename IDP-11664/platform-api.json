@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "projectKey": "projectKey-1",
+      "owner": "owner-1",
+      "dlGroup": "dlGroup-1",
+      "moduleUuid": "moduleUuid-1",
+      "moduleName": "moduleName-1",
+      "configurationSysId": "configurationSysId-1",
+      "name": "name-1",
+      "idpDisplayName": "idpDisplayName-1",
+      "idpStack": "idpStack-1",
+      "idpStackVersion": "1.0.0",
+      "idpOsType": [
+        {
+          "name": "name-1"
+        },
+        {
+          "name": "name-2"
+        },
+        {
+          "name": "name-3"
+        }
+      ],
+      "idpAppType": [
+        {
+          "name": "name-1"
+        },
+        {
+          "name": "name-2"
+        },
+        {
+          "name": "name-3"
+        }
+      ],
+      "idpCloudType": [
+        {
+          "name": "name-1"
+        },
+        {
+          "name": "name-2"
+        },
+        {
+          "name": "name-3"
+        }
+      ],
+      "value": "value-1",
+      "label": "label-1"
+    },
+    {
+      "projectKey": "projectKey-2",
+      "owner": "owner-2",
+      "dlGroup": "dlGroup-2",
+      "moduleUuid": "moduleUuid-2",
+      "moduleName": "moduleName-2",
+      "configurationSysId": "configurationSysId-2",
+      "name": "name-2",
+      "idpDisplayName": "idpDisplayName-2",
+      "idpStack": "idpStack-2",
+      "idpStackVersion": "1.0.1",
+      "value": "value-2",
+      "label": "label-2"
+    },
+    {
+      "projectKey": "projectKey-3",
+      "owner": "owner-3",
+      "dlGroup": "dlGroup-3",
+      "moduleUuid": "moduleUuid-3",
+      "moduleName": "moduleName-3",
+      "configurationSysId": "configurationSysId-3",
+      "name": "name-3",
+      "idpDisplayName": "idpDisplayName-3",
+      "idpStack": "idpStack-3",
+      "idpStackVersion": "1.0.2",
+      "value": "value-3",
+      "label": "label-3"
+    }
+  ]
+}

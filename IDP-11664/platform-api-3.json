@@ -1,0 +1,20 @@
+[
+  {
+    "data": {
+      "repoName": "repoName-1",
+      "isRepoExists": true
+    }
+  },
+  {
+    "data": {
+      "repoName": "repoName-2",
+      "isRepoExists": true
+    }
+  },
+  {
+    "data": {
+      "repoName": "repoName-3",
+      "isRepoExists": true
+    }
+  }
+]

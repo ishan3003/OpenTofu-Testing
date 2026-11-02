@@ -1,0 +1,119 @@
+    /idp11664-ardoq:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-ardoq/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/ardoq.json'
+    /idp11664-ays:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-ays/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/ays.json'
+    /idp11664-cis-aws-infrastructure:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-cis-aws-infrastructure/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/cis-aws-infrastructure.json'
+    /idp11664-cloud-security-insights:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-cloud-security-insights/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/cloud-security-insights.json'
+    /idp11664-dip-api-dev:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-dip-api-dev/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/dip-api-dev.json'
+    /idp11664-dpes-api-admin:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-dpes-api-admin/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/dpes-api-admin.json'
+    /idp11664-fuse-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-fuse-api/v2/idp/master/features/RESTART_SERVICES/configs/cluster\-providers/[^/?]+/environments/[^/?]+/deployment\-targets.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api-2.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/master/features/RESTART_SERVICES/configs/cluster\-providers/[^/?]+/environments/[^/?]+/regions.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api-2.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/master/features/RESTART_SERVICES/configs/cluster\-providers/[^/?]+/environments.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api-3.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/master/features/RESTART_SERVICES/configs/cluster\-providers.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api-2.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/services/restart/validate.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/utility/namespaces.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api.json'
+        '^/api/proxy/idp11664-fuse-api/v2/idp/utility/services.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/fuse-api.json'
+    /idp11664-github-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-github-api/orgs/Cloud\-Administration/teams/apm1082719\-.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-api.json'
+        '^/api/proxy/idp11664-github-api/repos/ATT\-DP10/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-api-2.json'
+    /idp11664-github-api-dtvit:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-github-api-dtvit/repos/DTV\-IT/[^/?]+/branches/[^/?]+.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-api-dtvit.json'
+        '^/api/proxy/idp11664-github-api-dtvit/repos/DTV\-IT/[^/?]+/tags.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-api-dtvit-2.json'
+    /idp11664-github-cloud-app:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/[^/?]+/[^/?]+/azure_storage_account_access_tier\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/azure_storage_account_file_share_access_tier\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/[^/?]+/[^/?]+/azure_storage_account_type\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/azure_storage_account_file_share_create\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/azure_storage_account_container_create\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/azure_storage_account_is_nfsv3_enabled\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app-2.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_storage_account/azure_storage_account_is_adls_enabled\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/azure_network_data/[^/?]+/[^/?]+/azure_network_data\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-azure\-paasdb/contents/idp2_templates/picker/azure_cosmosdb_app_id_name\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-objects/contents/idp/templates/api_picker_idp/harness/inventory\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+        '^/api/proxy/idp11664-github-cloud-app/repos/hcsc\-core/harness\-azure\-paasdb/contents/idp2_templates/picker/inventory\.json.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-cloud-app.json'
+    /idp11664-github-saas-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-github-saas-api/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/github-saas-api.json'
+    /idp11664-harness:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness.json'
+    /idp11664-harness-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness-api/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-api.json'
+    /idp11664-harness-api-endpoint:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness-api-endpoint/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-api-endpoint.json'
+    /idp11664-harness-api-get:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness-api-get/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-api-get.json'
+    /idp11664-harness-file-store:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness-file-store/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-file-store.json'
+    /idp11664-harness-idp2-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-harness-idp2-api/v1/entities/account\.DCP\..*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-idp2-api-2.json'
+        '^/api/proxy/idp11664-harness-idp2-api/v1/entities.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/harness-idp2-api.json'
+    /idp11664-olympus-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-olympus-api/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/olympus-api.json'
+    /idp11664-pangea-api-prod:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-pangea-api-prod/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/pangea-api-prod.json'
+    /idp11664-platform-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/templates/database\-types.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/templates/cloud\-types.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/templates/repo\-types.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/repos/validate\-name.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api-3.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/ad\-groups/inspect.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api-2.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/repos/validate.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api-4.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/templates.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/idp/projects.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+        '^/api/proxy/idp11664-platform-api/hoover\-service/master/towns.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/platform-api.json'
+    /idp11664-subscription-onboarding-discovery:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-subscription-onboarding-discovery/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/subscription-onboarding-discovery.json'
+    /idp11664-trellis-orchestrator-api:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-trellis-orchestrator-api/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/trellis-orchestrator-api.json'
+    /idp11664-vm-snapshot-list:
+      target: https://raw.githubusercontent.com
+      pathRewrite:
+        '^/api/proxy/idp11664-vm-snapshot-list/.*': '/ishan3003/OpenTofu-Testing/main/IDP-11664/vm-snapshot-list.json'

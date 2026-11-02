@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "cluster_namespace": [
+      {
+        "namespace": "namespace-1"
+      },
+      {
+        "namespace": "namespace-2"
+      },
+      {
+        "namespace": "namespace-3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "content": [
+      {
+        "project": {
+          "identifier": "identifier-1"
+        }
+      },
+      {
+        "project": {
+          "identifier": "identifier-2"
+        }
+      },
+      {
+        "project": {
+          "identifier": "identifier-3"
+        }
+      }
+    ]
+  }
+}

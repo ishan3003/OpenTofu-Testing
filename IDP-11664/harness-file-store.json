@@ -1,0 +1,17 @@
+[
+  {
+    "subid": "subid-1",
+    "name": "name-1",
+    "value": "value-1"
+  },
+  {
+    "subid": "subid-2",
+    "name": "name-2",
+    "value": "value-2"
+  },
+  {
+    "subid": "subid-3",
+    "name": "name-3",
+    "value": "value-3"
+  }
+]

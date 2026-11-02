@@ -1,0 +1,104 @@
+{
+  "default": "default-1",
+  "firebird-utilities-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-platform-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-mmb-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-dim-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-interface-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-terminals-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-operations-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "firebird-psa-estream-shared-chart": {
+    "latestVersion": "1.0.0",
+    "serviceInfo": "serviceInfo-1"
+  },
+  "local": "local-1",
+  "prod": "prod-1",
+  "images": [
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    },
+    {
+      "latestVersion": "1.0.0"
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0.0"
+    },
+    {
+      "version": "1.0.1"
+    },
+    {
+      "version": "1.0.2"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "data": {
+    "hcsc_app_id_name_list": [
+      {
+        "app_id_name": "app_id_name-1"
+      },
+      {
+        "app_id_name": "app_id_name-2"
+      },
+      {
+        "app_id_name": "app_id_name-3"
+      }
+    ],
+    "prod_cosmosdb_inventories": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "nonprod_cosmosdb_inventories": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "prod_mhsm_inventories": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "nonprod_mhsm_inventories": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "azure_inventories": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "vnets": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "StorageV2": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "BlobStorage": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "FileStorage": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "BlockBlobStorage": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "subnets": {
+      "id-1": [
+        {
+          "id": "id-1",
+          "name": "name-1"
+        },
+        {
+          "id": "id-2",
+          "name": "name-2"
+        },
+        {
+          "id": "id-3",
+          "name": "name-3"
+        }
+      ],
+      "id-2": [
+        {
+          "id": "id-1",
+          "name": "name-1"
+        },
+        {
+          "id": "id-2",
+          "name": "name-2"
+        },
+        {
+          "id": "id-3",
+          "name": "name-3"
+        }
+      ],
+      "id-3": [
+        {
+          "id": "id-1",
+          "name": "name-1"
+        },
+        {
+          "id": "id-2",
+          "name": "name-2"
+        },
+        {
+          "id": "id-3",
+          "name": "name-3"
+        }
+      ]
+    },
+    "id-1": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "id-2": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ],
+    "id-3": [
+      {
+        "id": "id-1",
+        "name": "name-1"
+      },
+      {
+        "id": "id-2",
+        "name": "name-2"
+      },
+      {
+        "id": "id-3",
+        "name": "name-3"
+      }
+    ]
+  }
+}

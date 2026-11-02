@@ -1,0 +1,40 @@
+{
+  "data": {
+    "project": {
+      "tags": [
+        {
+          "AssetID": "AssetID-1"
+        },
+        {
+          "AssetID": "AssetID-2"
+        },
+        {
+          "AssetID": "AssetID-3"
+        }
+      ]
+    },
+    "content": [
+      {
+        "variable": {
+          "spec": {
+            "value": "value-1"
+          }
+        }
+      },
+      {
+        "variable": {
+          "spec": {
+            "value": "value-2"
+          }
+        }
+      },
+      {
+        "variable": {
+          "spec": {
+            "value": "value-3"
+          }
+        }
+      }
+    ]
+  }
+}
