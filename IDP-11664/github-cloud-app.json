@@ -69,16 +69,16 @@
     ],
     "azure_inventories": [
       {
-        "id": "id-1",
-        "name": "name-1"
+        "id": "azure/inv/sub-1/region-1",
+        "name": "inventory-1"
       },
       {
-        "id": "id-2",
-        "name": "name-2"
+        "id": "azure/inv/sub-2/region-2",
+        "name": "inventory-2"
       },
       {
-        "id": "id-3",
-        "name": "name-3"
+        "id": "azure/inv/sub-3/region-3",
+        "name": "inventory-3"
       }
     ],
     "vnets": [
