@@ -1,0 +1,20 @@
+[
+  {
+    "name": "entity-1",
+    "entity_ref": "component:default/entity-1",
+    "kind": "component",
+    "owner": "group:default/owner-1"
+  },
+  {
+    "name": "entity-2",
+    "entity_ref": "component:default/entity-2",
+    "kind": "component",
+    "owner": "group:default/owner-2"
+  },
+  {
+    "name": "entity-3",
+    "entity_ref": "api:default/entity-3",
+    "kind": "api",
+    "owner": "group:default/owner-3"
+  }
+]
