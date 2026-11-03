@@ -13,58 +13,58 @@
     ],
     "prod_cosmosdb_inventories": [
       {
-        "id": "id-1",
-        "name": "name-1"
+        "id": "prod-cosmos-id-1",
+        "name": "prod-cosmos-1"
       },
       {
-        "id": "id-2",
-        "name": "name-2"
+        "id": "prod-cosmos-id-2",
+        "name": "prod-cosmos-2"
       },
       {
-        "id": "id-3",
-        "name": "name-3"
+        "id": "prod-cosmos-id-3",
+        "name": "prod-cosmos-3"
       }
     ],
     "nonprod_cosmosdb_inventories": [
       {
-        "id": "id-1",
-        "name": "name-1"
+        "id": "nonprod-cosmos-id-1",
+        "name": "nonprod-cosmos-1"
       },
       {
-        "id": "id-2",
-        "name": "name-2"
+        "id": "nonprod-cosmos-id-2",
+        "name": "nonprod-cosmos-2"
       },
       {
-        "id": "id-3",
-        "name": "name-3"
+        "id": "nonprod-cosmos-id-3",
+        "name": "nonprod-cosmos-3"
       }
     ],
     "prod_mhsm_inventories": [
       {
-        "id": "id-1",
-        "name": "name-1"
+        "id": "prod-mhsm-id-1",
+        "name": "prod-mhsm-1"
       },
       {
-        "id": "id-2",
-        "name": "name-2"
+        "id": "prod-mhsm-id-2",
+        "name": "prod-mhsm-2"
       },
       {
-        "id": "id-3",
-        "name": "name-3"
+        "id": "prod-mhsm-id-3",
+        "name": "prod-mhsm-3"
       }
     ],
     "nonprod_mhsm_inventories": [
       {
-        "id": "id-1",
-        "name": "name-1"
+        "id": "nonprod-mhsm-id-1",
+        "name": "nonprod-mhsm-1"
       },
       {
-        "id": "id-2",
-        "name": "name-2"
+        "id": "nonprod-mhsm-id-2",
+        "name": "nonprod-mhsm-2"
       },
       {
-        "id": "id-3",
-        "name": "name-3"
+        "id": "nonprod-mhsm-id-3",
+        "name": "nonprod-mhsm-3"
       }
     ],
     "azure_inventories": [
