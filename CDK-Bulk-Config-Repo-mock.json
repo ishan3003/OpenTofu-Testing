@@ -1,0 +1,10 @@
+{
+  "content": {
+    "entries": [
+      { "name": "dev" },
+      { "name": "qa" },
+      { "name": "e2e-resource.json" },
+      { "name": "e2e-configmap.yaml" }
+    ]
+  }
+}
