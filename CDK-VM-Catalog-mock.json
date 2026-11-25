@@ -1,0 +1,54 @@
+[
+  {
+    "identifier": "E2E_test_vm",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_test_vm",
+    "type": "vm",
+    "metadata": {
+      "extra_vars": [
+        {
+          "options": {
+            "vcenter": "e2e-vcenter"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "identifier": "E2E_test_aws_ec2_vm",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_test_aws_ec2_vm",
+    "type": "aws-ec2",
+    "metadata": {
+      "cloudProject": "mock-aws-cloud-project",
+      "resourceConfig": {
+        "region": "us-east-1",
+        "resource_name": "E2E_test-ec2-instance",
+        "cdk_deployment_id": "E2E_mock-deployment-id"
+      },
+      "additionalInfo": {
+        "deployment": {
+          "state": "stopped"
+        }
+      }
+    }
+  },
+  {
+    "identifier": "E2E_test_azure_vm",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_test_azure_vm",
+    "type": "azure-vm",
+    "metadata": {
+      "cloudProject": "e2e-azure-account",
+      "resourceConfig": {
+        "resource_name": "e2e-azure-vm",
+        "resource_group_name": "e2e-rg",
+        "subscription_id": "e2e-azure-sub",
+        "location": "eastus2",
+        "cdk_deployment_id": "e2e-azure-deployment"
+      },
+      "additionalInfo": {
+        "deployment": {
+          "state": "running"
+        }
+      }
+    }
+  }
+]
