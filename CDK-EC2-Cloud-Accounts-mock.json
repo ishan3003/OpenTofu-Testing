@@ -1,0 +1,12 @@
+[
+  {
+    "name": "e2e-aws-account",
+    "properties": {
+      "regions": [
+        { "name": "us-east-1" },
+        { "name": "us-west-2" }
+      ],
+      "allowed_resource_env": ["dev", "qa", "prod"]
+    }
+  }
+]
