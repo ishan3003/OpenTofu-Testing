@@ -1,0 +1,83 @@
+[
+  {
+    "identifier": "E2E_select_vm",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_select_vm",
+    "type": "vm",
+    "metadata": {
+      "resourceConfig": {
+        "operating_system": "RHEL 9",
+        "cpu": "2",
+        "memory": "4"
+      },
+      "additionalInfo": {
+        "deployment": {
+          "state": "active"
+        }
+      },
+      "extra_vars": [
+        {
+          "options": {
+            "vcenter": "e2e-vcenter",
+            "vcenter_base_folder": "e2e-folder",
+            "vcenter_account": "e2e-vcenter-account"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "identifier": "E2E_select_vm_object",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_select_vm_object",
+    "type": "vm",
+    "metadata": {
+      "resourceConfig": {
+        "operating_system": "Windows Server 2022",
+        "cpu": "4",
+        "memory": "8"
+      },
+      "additionalInfo": {
+        "deployment": {
+          "state": "powered-off"
+        }
+      },
+      "extra_vars": {
+        "options": {
+          "vcenter": "e2e-vcenter-obj",
+          "vcenter_base_folder": "e2e-folder-obj",
+          "vcenter_account": "e2e-vcenter-account-obj"
+        },
+        "resourceConfig": {
+          "operating_system": "Windows Server 2022",
+          "cpu": "4",
+          "memory": "8"
+        }
+      }
+    }
+  },
+  {
+    "identifier": "E2E_select_aws_ec2",
+    "entity_ref": "component:account.testautoidp.testautoidp/E2E_select_aws_ec2",
+    "type": "aws-ec2",
+    "metadata": {
+      "cloudProject": "mock-aws-cloud-project",
+      "savedItemMap": [
+        {
+          "resource-0": {
+            "region": "us-east-1",
+            "cdk_deployment_id": "E2E_select-deployment",
+            "resource_name": "E2E_select-ec2"
+          }
+        }
+      ],
+      "resourceConfig": {
+        "operating_system": "RHEL 9",
+        "server_size": "medium"
+      },
+      "additionalInfo": {
+        "deployment": {
+          "state": "active"
+        }
+      }
+    }
+  }
+]

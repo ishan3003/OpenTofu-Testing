@@ -1,0 +1,10 @@
+[
+  {
+    "team_slug": "e2e-team",
+    "team_name": "E2E Team"
+  },
+  {
+    "team_slug": "e2e-platform",
+    "team_name": "E2E Platform"
+  }
+]
