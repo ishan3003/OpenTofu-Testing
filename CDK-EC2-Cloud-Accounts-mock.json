@@ -6,7 +6,9 @@
         { "name": "us-east-1" },
         { "name": "us-west-2" }
       ],
-      "allowed_resource_env": ["dev", "qa", "prod"]
+      "allowed_resource_env": ["dev", "qa", "prod"],
+      "subscription_id": "e2e-azure-sub",
+      "tenant_name": "e2e-tenant"
     }
   }
 ]
