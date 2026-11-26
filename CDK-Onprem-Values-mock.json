@@ -1,0 +1,5 @@
+[
+  "e2e-vmware",
+  "e2e-aws",
+  "e2e-azure"
+]
