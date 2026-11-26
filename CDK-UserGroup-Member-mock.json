@@ -1,0 +1,8 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "member": true,
+    "userId": "idp-release-automation-ui",
+    "groupIdentifier": "IaC_Catalog_Users"
+  }
+}
